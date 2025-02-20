@@ -1,0 +1,112 @@
+p {
+  font-size: large;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+nav {
+  background: #ff0000;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  padding: 120px 20px 40px;
+  background: url("https://source.unsplash.com/1600x900/?football") no-repeat
+    center/cover;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background: #ff0000;
+  color: white;
+}
+
+td {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  table {
+    width: 100%;
+  }
+}
